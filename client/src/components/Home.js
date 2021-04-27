@@ -6,46 +6,58 @@ import  Avatar from '@material-ui/core/Avatar';
 import Footer from './Footer';
 const useStyles = makeStyles({
     home:{
-        color:'#222',
-        textAlign:'center',
-        paddingTop:'7rem',
+        color:'#5a4c5d',
+        paddingTop:'4rem',
+        marginLeft:'30%',
+        stroke:'4px'
+        
+
     },
     background:{
         backgroundImage:`url(${background})`,
-        backgroundSize:'cover',
-        height:'40rem',
-        overflowY: 'hidden',
-        overFlowX: 'hidden'
+        backgroundSize:'100%',
+        backgroundPosition:'bottom',
+        minHeight:'100vh',
+        height:'100vh',
+        alignItems:'center',
+        
 
         
         },
-    box:{
-        display:'flex',
-        alignItems:'center',
-        justifyContent:'center',
-        overflowY: 'hidden',
-        overFlowX: 'hidden'
+    box:{     
+    width:'25rem',
+    display:'inline-block',
+    alignSelf:'center',
+    marginLeft:'25rem'
+
     },
     avatar:{
         height:'10rem',
         width:'10rem',
+        float:'left'
+          },
+    fooster:{
+        float:'left',
         display:'flex',
-
-    }
+        margin:'50px',
+        backgroundColor:'red'
+       }
 
 })
 
 const Home = ()=>{
     const classes = useStyles()
 
-return(<div className={classes.background}>
-
-
+return(
+<div className={classes.background}>
 <Typography variant={'h1'}className={classes.home}>Mert Yıldız</Typography>
+
+
 <div className={classes.box}>
+    
 <Avatar  alt={'none'} className={classes.avatar} src={'https://avatars.githubusercontent.com/u/71990861?v=4'}/>
 
-<Footer/>
+<Footer place={'home'}/>
 </div>
 </div>
 )
