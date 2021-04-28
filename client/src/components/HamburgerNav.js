@@ -108,7 +108,7 @@ const useStyles = makeStyles({
 
             </div>
               {list('left')}
-              <Footer/>
+              <Footer place={'bottomNavContainer'}/>
             </Drawer>
           </React.Fragment>
     

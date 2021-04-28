@@ -10,6 +10,10 @@ const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#222",
   },
+  home: {
+    background: "#222",
+    marginTop:'50px'
+  },
   root: {
     "& .MuiSvgIcon-root": {
       fill: "tan",
@@ -18,14 +22,14 @@ const useStyles = makeStyles({
         fontSize: "1.8rem",
       },
     },
-  },
+ },
 });
 
-const Footer = () => {
+const Footer = (props) => {
   const classes = useStyles();
 
   return (
-    <BottomNavigation className={classes.bottomNavContainer}>
+    <BottomNavigation className={classes[props.place]}>
       <BottomNavigationAction icon={<LinkedInIcon />} className={classes.root} />
       <BottomNavigationAction icon={<Twitter />} className={classes.root} />
       <BottomNavigationAction icon={<GitHubIcon />} className={classes.root} />

@@ -6,11 +6,12 @@ import  Avatar from '@material-ui/core/Avatar';
 import Footer from './Footer';
 const useStyles = makeStyles({
     home:{
-        color:'#5a4c5d',
+        color:'white',
         paddingTop:'4rem',
         marginLeft:'30%',
-        stroke:'4px'
-        
+        WebkitTextStrokeColor:'black',
+        WebkitTextStrokeWidth:'1px'
+
 
     },
     background:{

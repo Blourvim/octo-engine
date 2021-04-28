@@ -1,7 +1,9 @@
 import React from 'react';
-import HamburgerNav from './components/HamburgerNav';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Contact from './components/Contact';
+import AboutMe from './components/AboutMe';
+import SkillRating from './components/SkillRating';
 
 
 const App =()=>{
@@ -10,11 +12,9 @@ const App =()=>{
     return(
        
         <React.Fragment >
-        <Navbar/>
-        <Home/>
-
-
-        </React.Fragment>
+            <Navbar/>
+            <AboutMe/>
+           </React.Fragment>
     )
 }
 
