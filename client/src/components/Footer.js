@@ -12,8 +12,9 @@ const useStyles = makeStyles({
   },
   home: {
     background: "#222",
-    marginTop:'50px'
-  },
+    marginTop:'50px',
+    width:'fit',
+ },
   root: {
     "& .MuiSvgIcon-root": {
       fill: "tan",

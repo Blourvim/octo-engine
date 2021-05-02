@@ -6,15 +6,15 @@ import AboutMe from './components/AboutMe';
 import SkillRating from './components/SkillRating';
 
 
-const App =()=>{
+const App = () => {
 
 
-    return(
-       
+    return (
+
         <React.Fragment >
-            <Navbar/>
-            <AboutMe/>
-           </React.Fragment>
+            <Navbar />
+            <Home />
+        </React.Fragment>
     )
 }
 
