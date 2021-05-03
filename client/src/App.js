@@ -13,7 +13,7 @@ const App = () => {
 
         <React.Fragment >
             <Navbar />
-            <Home />
+            <AboutMe/>
         </React.Fragment>
     )
 }

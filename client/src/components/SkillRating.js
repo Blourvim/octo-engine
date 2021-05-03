@@ -6,9 +6,9 @@ import Box from '@material-ui/core/Box';
 const SkillRating =(props)=>{
 
     return(
- <Box component="fieldset" xs={1} borderColor="transparent">
+      <Box component="fieldset" xs={1} borderColor="transparent">
         <Typography component="legend">{props.skill}</Typography>
-        <Rating name="read-only" value={props.value} readOnly />
+        <Rating precision={0.5}name="read-only" value={props.value} readOnly />
       </Box>
 
     )
