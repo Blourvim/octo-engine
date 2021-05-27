@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import AboutMe from './components/AboutMe';
 import SkillRating from './components/SkillRating';
+import Portfilio from './components/Portfilio.js'
 
 
 const App = () => {
@@ -12,9 +13,10 @@ const App = () => {
     return (
 
         <React.Fragment >
-            <Navbar />
+            <Navbar/>
             <AboutMe/>
-        </React.Fragment>
+          
+    </React.Fragment>
     )
 }
 

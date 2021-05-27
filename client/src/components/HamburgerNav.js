@@ -7,7 +7,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import { Typography } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import GrainIcon from '@material-ui/icons/Grain';
@@ -49,7 +48,8 @@ const useStyles = makeStyles({
     },
     menuText:{
       padding:'1rem',
-      paddingLeft:'2rem'
+      paddingLeft:'2rem',
+      color:'white'
     }
   });
   
@@ -57,7 +57,6 @@ const useStyles = makeStyles({
     const classes = useStyles();
     const [state, setState] = React.useState({
       left: false,
-      right: false,
     });
   
     const toggleDrawer = (anchor, open) => (event) => {
@@ -65,21 +64,25 @@ const useStyles = makeStyles({
         return;
       }
   
-      setState({ ...state, [anchor]: open });
+      setState({state, [anchor]: open });
     };
   
     const list = (anchor) => (
+      
       <div
         className={clsx(classes.list, {
-          [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+          [classes.fullList]: anchor === 'top'
         })}
         role="presentation"
         onClick={toggleDrawer(anchor, false)}
         onKeyDown={toggleDrawer(anchor, false)}
       >
         <List className={clsx(classes.box)} >
+          <ListItem className={classes.menuBar}button key={'Menu'}>
+          <ListItemText primary={'----Mert---'}/>
+          </ListItem>
           {['Home','Portfilio', 'About Me', 'Contact' ].map((text, index) => (
-            <ListItem button key={text}>
+            <ListItem button key={text}onClick={[()=>console.log('hi'),()=>console.log(text)][index]}>
               <ListItemIcon>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -95,15 +98,6 @@ const useStyles = makeStyles({
           <React.Fragment key={'menu'}>
             <Button className={clsx(classes.button)}onClick={toggleDrawer('left', true)}>{'Menu'}</Button>
             <Drawer ModalProps={{BackdropProps:{invisible:true}}} anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
-            
-        
-            <div className={classes.menubar}>
-            <Typography variant="h6" className={classes.menuText}>
-
-              Menu
-            </Typography>
-
-            </div>
               {list('left')}
               <Footer place={'bottomNavContainer'}/>
             </Drawer>

@@ -1,0 +1,53 @@
+//These 2 functions below handle the navigation between skill display pages
+const reduceSkillPage=()=>{
+    skillContainerPage ===0 ?
+    setSkillContainerPage(2):
+    setSkillContainerPage((skillContainerPage-1))
+}
+const addSkillPage=()=>{
+    skillContainerPage ===2 ?
+    setSkillContainerPage(0):
+    setSkillContainerPage((skillContainerPage+1))
+
+}
+
+
+
+<div className={classes.skillContainer}>
+{(skillContainerPage===0)&&<div className={classes.general}>
+    <Typography variant={'h4'}>General </Typography>
+<SkillRating value={5} skill={'Javascript ES6'}/>
+<SkillRating value={5} skill={'Git and version control'}/>
+<SkillRating value={5} skill={'Problem Solving'}/>
+<SkillRating value={5} skill={'English'}/>
+<SkillRating value={5} skill={'Turkish'}/>
+</div>
+}
+
+
+{ (skillContainerPage===1)&& <div className={classes.frontEnd}>
+<Typography variant={'h4'}>Front-End</Typography>
+<SkillRating value={3.5} skill={'Adobe Photoshop'}/>
+<SkillRating value={2} skill={'React JS'}/>
+<SkillRating value={5} skill={'HTML'}/>
+<SkillRating value={3} skill={'CSS'}/>
+<SkillRating value={3} skill={'CSS'}/>
+
+
+</div>
+}
+
+{(skillContainerPage===2)&& <div className={classes.backEnd}>
+  <Typography variant={'h4'}>Back-End</Typography>
+  <SkillRating value={4} skill={'Web Security'}/> 
+<SkillRating value={5} skill={'Nodejs'}/>
+<SkillRating value={5} skill={'Authentication & Autherization'}/>
+<SkillRating value={5} skill={"GraphQL & RESTful API's"}/>
+<SkillRating value={5} skill={'Database Knowledge'}/>
+</div>
+}
+<div className={classes.navigationButtons}>
+<Button className={classes.button}onClick={()=>{reduceSkillPage()}}>{'<-'}</Button>
+<Button className={classes.button}onClick={()=>{addSkillPage()}}>   {'->'}</Button>
+</div>
+</div>
