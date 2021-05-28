@@ -9,7 +9,10 @@ const useStyles = makeStyles({
   skillListItem:{
     display:'flex',
     padding:'3px',
-    height:'45px'
+    height:'45px',
+    marginLeft:'1rem',
+    marginBottom:'0.5rem'
+
   },
   skillName:{
     backgroundColor:'black',
@@ -17,8 +20,9 @@ const useStyles = makeStyles({
     display: 'table-cell',
     padding: '12px',
     verticalAlign: 'middle',
-   width:'30%',
-    fontSize:'85%'
+    width:'30%',
+    fontSize:'85%',
+    textAlign:'center'
   },
   skillLevel:{
     display: 'table-cell',

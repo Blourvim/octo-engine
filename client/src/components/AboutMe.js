@@ -17,42 +17,44 @@ const useStyles = makeStyles({
     backgroundColor:'black'
   },
 container:{
-width:'98%',
-display:'grid',
+display:'flex',
 alignSelf:'center',
-marginRight:'auto',
-marginLeft:'auto',
-marginTop:'4rem',
+marginRight:'0',
+marginLeft:'0',
+marginTop:'0',
 marginBottom:'0',
+backgroundColor:'hsl(256, 20%, 20%)',
+width:'99vw'
+
 
 },
 skillContainer:{
   display:'relative',
-
     borderWidth:'2px',
     paddingTop:'1%',
     paddingBottom:'0',
     paddingLeft:'0',
     paddingRight:'0',
-    marginBottom:'0',
+    marginBottom:'20px',
 
     borderStyle:'solid',
     backgroundColor:'#967bb6',
 
 },
-bookMarks:{
-    backgroundColor:'#222',
-    color:'white'
+backgroundContainer:{
+  backgroundColor:'hsl(256, 20%, 20%)',
+  margin:0,
+  padding:0,
+  width:'cover'
 },
-
-button:{
-    backgroundColor:'#7c5aa4',
-    width:'50%',
-    padding:'0',
-    margin:'0',
-    height:'50px'
+intro:{
+  backgroundColor:'hsl(256, 20%, 60%)',
+  textAlign:'center',
+  paddingTop:'2vw'
+},
+grid:{
+  margin:'0px',
 }
-
 
 })
 
@@ -60,26 +62,14 @@ const About =()=>{
 
 const classes = useStyles();
 
-const bookMarks =()=>(
-    <List className={classes.bookMarks} >
-          {[ 'About Me','Technologies','Portfilio', 'Contact' ].map((text, index) => (
-            <ListItem onClick={(e)=>{console.log(e)}}button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-        </List>
-
-
-)
-
 
 return(
-<Container className={classes.container}>
-    <Grid container spacing={3}>
+<div className={classes.container}>
+    <Grid className={classes.grid} container spacing={3}>
       <Grid item xs={12}>
-        <Paper elevation={24}>
+        <Paper className={classes.intro}elevation={24}>
         <Typography variant={'h3'}>
-          I am a self taught fullstack developer, who values detail, security, and making projects looking to challange myself on coding
+          I am a self taught fullstack developer, who values detail, security, and making projects looking to challenge myself on coding, design and everything else
 
         </Typography>
 
@@ -109,7 +99,7 @@ return(
 </Paper>
 </Grid>
     </Grid>
-</Container>
+</div>
 )
 
 };

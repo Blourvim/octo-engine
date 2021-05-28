@@ -11,8 +11,10 @@ import ContactPicker from './ContactPicker';
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
-    background: "#233",
+    background: 'hsl(256, 20%, 20%)',
     height: "100vh",
+    width:'99vw'
+
   },
   heading: {
     color: "tomato",
@@ -21,10 +23,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "1rem",
   },
   form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
+    marginTop:'50px',
+    position: "relative",
   },
   input: {
     color: "#fff",
@@ -65,7 +65,8 @@ const InputField = withStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <Box component="div" className={classes.contactContainer}>
+    <div>
+<Box component="div" className={classes.contactContainer}>
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
           <Typography variant="h5" className={classes.heading}>
@@ -103,7 +104,7 @@ const Contact = () => {
           </Button>
         </Box>
       </Grid>
-    </Box>
+    </Box>    </div>
   );
 };
 
