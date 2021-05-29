@@ -7,7 +7,6 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
 import Send from "@material-ui/icons/Send";
-import ContactPicker from './ContactPicker';
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
@@ -65,14 +64,13 @@ const InputField = withStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div id='Contact'>
 <Box component="div" className={classes.contactContainer}>
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
           <Typography variant="h5" className={classes.heading}>
             Hire or Contact me via...
           </Typography>
-          <ContactPicker/>          
           <InputField
             fullWidth={true}
             label="Name"

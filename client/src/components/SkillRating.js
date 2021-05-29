@@ -44,7 +44,7 @@ const SkillRating =(props)=>{
       <div className={classes.skillLevel}
       style={{ borderBottomRightRadius:'5px',borderTopRightRadius:'5px',width: `${level/2}%`, backgroundColor: `hsl(${281}, ${level}%, ${level/3}%)` }}
     >
-      <Typography variant={'p'}>{level}%</Typography>
+      <Typography variant={'body1'}>{level}%</Typography>
     </div>
 </div>
 

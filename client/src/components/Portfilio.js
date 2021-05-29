@@ -40,7 +40,7 @@ backgroundContainer:{
 
 const Portfilio =()=>{
    const classes= useStyles();
-return(<div className={classes.backgroundContainer}>
+return(<div id='Portfilio'className={classes.backgroundContainer}>
 <div className={classes.divider}>
 <Typography align={'center'}variant={'h3'}>My Portflio</Typography>
 </div>
@@ -53,31 +53,33 @@ return(<div className={classes.backgroundContainer}>
      description:'My first project.It is an incremental game about a website that builds up as you click. Where I experimented with DOM manipulation',
      link:'link',
      projectImage:'https://picsum.photos/200/300',
-     githubLink:'github'
+     githubLink:'githasdasfasub'
     },
     {
         projectTitle:'Doby Mick',
         description:'It is a game that features a text based game engine, a simple boat simulator that I coded to practice writing algoritms ',
-        link:'link',
+        link:'liggnk',
         projectImage:'https://picsum.photos/200/300',
-        githubLink:'github'
+        githubLink:'gitasdashub'
        },
        {
         projectTitle:'Mov Net',
         description:"My first fullstack social network project that features a secure authentication and autherizationflow, and friendship system uses API's and displays those results",
-        link:'link',
+        link:'lissnk',
         projectImage:'https://picsum.photos/200/300',
-        githubLink:'github'
+        githubLink:'gsditashub'
        },
        {
         projectTitle:'title',
         description:'description',
-        link:'link',
+        link:'lisdnk',
         projectImage:'https://picsum.photos/200/300',
-        githubLink:'github'
+        githubLink:'giasdasthub'
        }
     ].map(item=>(
-        <PortfilioCard projectTitle={item.projectTitle}
+        <PortfilioCard
+                        key={item.githubLink}
+                       projectTitle={item.projectTitle}
                        description={item.description}
                        link={item.link}
                        projectImage={item.projectImage}

@@ -97,7 +97,7 @@ const Home = () => {
 
 
     return (
-        <div className={homeBackground}>
+        <div id='Home'className={homeBackground}>
 
             <Typography variant={'h1'} className={homeText}>Mert Yıldız</Typography>
 

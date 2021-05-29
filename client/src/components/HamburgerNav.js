@@ -12,6 +12,8 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import GrainIcon from '@material-ui/icons/Grain';
 import PersonIcon from '@material-ui/icons/Person';
 import Footer from './Footer';
+import { Link} from 'react-scroll'
+
 
 
 
@@ -78,14 +80,16 @@ const useStyles = makeStyles({
         onKeyDown={toggleDrawer(anchor, false)}
       >
         <List className={clsx(classes.box)} >
-          <ListItem className={classes.menuBar}button key={'Menu'}>
-          <ListItemText primary={'----Mert---'}/>
-          </ListItem>
-          {['Home','Portfilio', 'About Me', 'Contact' ].map((text, index) => (
-            <ListItem button key={text}onClick={[()=>console.log('hi'),()=>console.log(text)][index]}>
+          {['Home','Portfilio', 'About Me',  'Contact' ].map((text, index) => (
+                          <Link activeClass="active" to={text} hashSpy={true} spy={true} smooth={true}>
+
+            <ListItem button key={text}>
               <ListItemIcon>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
+
               <ListItemText primary={text} />
+              
             </ListItem>
+            </Link>
           ))}
         </List>
       </div>

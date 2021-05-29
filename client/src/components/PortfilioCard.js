@@ -26,7 +26,7 @@ const {description,projectImage,link,githubLink,projectTitle} = props
     <CardMedia className={classes.cardMedia} image={projectImage} title={projectTitle}/>
 
     <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography align={'center'}gutterBottom variant="h5" component="h2">
           {projectTitle}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">

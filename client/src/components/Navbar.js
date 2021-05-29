@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Drawer from "@material-ui/core/Drawer";
+import { Link } from 'react-scroll';
 import Box from "@material-ui/core/Box";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -8,16 +7,15 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
-import AssignmentInd from "@material-ui/icons/AssignmentInd";
-import Home from "@material-ui/icons/Home";
-import Apps from "@material-ui/icons/Apps";
-import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
-import HamburgerNav from './HamburgerNav';
-
-import Footer from "../components/Footer";
+import HomeIcon from '@material-ui/icons/Home';
+import ContactMailIcon from '@material-ui/icons/ContactMail';
+import GrainIcon from '@material-ui/icons/Grain';
+import PersonIcon from '@material-ui/icons/Person';
+import Fab from '@material-ui/core/Fab';
+import Zoom from '@material-ui/core/Zoom';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 const useStyles = makeStyles((theme) => ({
   body:{
@@ -38,9 +36,18 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar:{
     verticalAlign:'top',
-    paddingRight:'0px'
-  }
+    paddingRight:'0px',
+    alignSelf:'center',
+
+  },
+  box:{ 
+    alignSelf:'center',
+    display:'inline-flex',
+    marginLeft:'0px',
+    marginRight:'0px'
+}
 }));
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -49,17 +56,28 @@ const Navbar = () => {
 
   
   return (
-    <React.Fragment className={classes.root} >
+    <React.Fragment>
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolbar} >
+          <List className={classes.box} >
+          {['Home','Portfilio', 'About Me',  'Contact' ].map((text, index) => (
+                          <Link key={text +'navbarlink'} activeClass="active" to={text} hashSpy={true} spy={true} smooth={true}>
 
-            <Typography variant="h5" className={classes.title}>
-            <HamburgerNav position="absulute"/>     
-                    </Typography>
+            <ListItem button key={text +'navbar'}>
+              <ListItemIcon key={text +'navbaricon'}>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
+
+              <ListItemText key={text +'navbartext'} primary={text} />
+              
+            </ListItem>
+            </Link>
+          ))}
+        </List>
           </Toolbar>
         </AppBar>
       </Box>
+      
+
     </React.Fragment>
   );
 };
