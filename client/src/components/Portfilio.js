@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import Container from '@material-ui/core/Container';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 import PortfilioCard from './PortfilioCard';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
     card:{
@@ -20,18 +16,21 @@ divider:{
     backgroundColor:'hsl(256, 20%, 20%)',
 },
 portfilioContainer:{
-    display:'flex',
-    width:'100vw',
-    alignSelf:'center',
+
     marginTop:'5vw',
-    paddingBottom:'5vw',
-    justifyContent:'center',
+    marginBottom:'5vw',
+    padding:0,
+    marginLeft:'0px',
+    marginRight:'0px',
     
 },
 backgroundContainer:{
+    maxWidth:'100%',
+    marginLeft:'0px',
+    marginRight:'0px',
+    overflowX:'hidden',
     backgroundColor:'hsl(256, 20%, 20%)',
     padding:0,
-    width:'99vw',
 
 }
 
@@ -40,13 +39,16 @@ backgroundContainer:{
 
 const Portfilio =()=>{
    const classes= useStyles();
+const smallScreen = useMediaQuery('(max-width:300)')
+
+
 return(<div id='Portfilio'className={classes.backgroundContainer}>
 <div className={classes.divider}>
 <Typography align={'center'}variant={'h3'}>My Portflio</Typography>
 </div>
 
 
-<Grid className={classes.portfilioContainer}container spacing={4}>
+<Grid justify={'center'}className={classes.portfilioContainer}container spacing={smallScreen ? 0:3}>
 {[
     {
      projectTitle:'Website incremental',

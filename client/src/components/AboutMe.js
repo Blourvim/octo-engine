@@ -24,7 +24,6 @@ marginLeft:'0',
 marginTop:'0',
 marginBottom:'0',
 backgroundColor:'hsl(256, 20%, 20%)',
-width:'99vw'
 
 
 },
@@ -92,10 +91,10 @@ return(
     <Typography align={'center'} variant={'h4'}> Key Skills      </Typography>
     <SkillRating skill={'Responsive Design'} level={80}/>
    <SkillRating skill={'Fundemental Security'} level={100}/>
-   <SkillRating skill={'SEO'} level={50}/>
-   <SkillRating skill={'Database'} level={80}/>
+   <SkillRating skill={'Search Engine Optimization'} level={50}/>
+   <SkillRating skill={'Database Knowledge'} level={80}/>
    <SkillRating skill={'Computer Fundementals'} level={100}/>
-   <SkillRating skill={"API's"} level={100}/>
+   <SkillRating skill={"RESTfull & GraphQL API's"} level={100}/>
 </Paper>
 </Grid>
     </Grid>

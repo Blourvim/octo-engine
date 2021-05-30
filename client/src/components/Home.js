@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         WebkitTextStrokeWidth: '1px',
         position: 'absolute',
         transform: 'translate(-50%,-50%)',
-        right: '-25%',
+        right: '-10%',
         top: '20%',
 
 
@@ -34,6 +34,7 @@ const useStyles = makeStyles({
 
     },
     background: {
+        display:'flex',
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
         backgroundPosition: 'bottom',
@@ -47,15 +48,15 @@ const useStyles = makeStyles({
         backgroundImage: `url(${background})`,
         backgroundSize: '1000px',
         backgroundPosition: 'bottom',
-        height: '100vh',
+        height: '80vh',
         alignItems: 'center',
         background: 'no-repeat',
         backgroundColor: '#C7A993',
-        overflowX:'hidden',
-        overflowY:'hidden',
+     
 
     },
     box: {
+        alignItems:'center',
         display: 'inline-block',
         minWidth: '25rem',
         position: 'absolute',
@@ -65,10 +66,10 @@ const useStyles = makeStyles({
     },
     boxMobile: {
         display: 'inline-block',
-        minWidth: '25rem',
+        width: '26rem',
         position: 'absolute',
         transform: 'translate(-50%,-50%)',
-        left: '50%',
+        left: '40%',
         top: '30%'
     },
     avatar: {
@@ -108,8 +109,7 @@ const Home = () => {
 
                 <Footer place={'home'} />
                 <button onClick={() => { openKey() }}>x</button>
-                {keyDrawer && <div>lorem imsum dolor sit amet zxcsacx adljg aspwezx aweqwşl zxcşsjd  ksljd</div>}
-                <p>Programmer</p>
+                {keyDrawer && <div>secret</div>}
             </div>
         </div>
     )

@@ -17,12 +17,14 @@ const useStyles = makeStyles({
   skillName:{
     backgroundColor:'black',
     color:'white',
-    display: 'table-cell',
+    display: 'flex',
     padding: '12px',
     verticalAlign: 'middle',
     width:'30%',
     fontSize:'85%',
-    textAlign:'center'
+    alignItems:'center',
+    textAlign:'center',
+    justify:'center'
   },
   skillLevel:{
     display: 'table-cell',

@@ -7,15 +7,14 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import HomeIcon from '@material-ui/icons/Home';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import GrainIcon from '@material-ui/icons/Grain';
 import PersonIcon from '@material-ui/icons/Person';
 import Fab from '@material-ui/core/Fab';
-import Zoom from '@material-ui/core/Zoom';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+
 
 const useStyles = makeStyles((theme) => ({
   body:{
@@ -51,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const bigScreen = useMediaQuery('(min-width:600px)')
 
   const classes = useStyles();
 
@@ -60,19 +60,22 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolbar} >
-          <List className={classes.box} >
-          {['Home','Portfilio', 'About Me',  'Contact' ].map((text, index) => (
-                          <Link key={text +'navbarlink'} activeClass="active" to={text} hashSpy={true} spy={true} smooth={true}>
+        {bigScreen &&
+        <List className={classes.box} >
+        {['Home','Portfilio', 'About Me',  'Contact' ].map((text, index) => (
+                        <Link key={text +'navbarlink'} activeClass="active" to={text} hashSpy={true} spy={true} smooth={true}>
 
-            <ListItem button key={text +'navbar'}>
-              <ListItemIcon key={text +'navbaricon'}>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
+          <ListItem button key={text +'navbar'}>
+            <ListItemIcon key={text +'navbaricon'}>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
 
-              <ListItemText key={text +'navbartext'} primary={text} />
-              
-            </ListItem>
-            </Link>
-          ))}
-        </List>
+            <ListItemText key={text +'navbartext'} primary={text} />
+            
+          </ListItem>
+          </Link>
+        ))}
+      </List>
+        
+        }  
           </Toolbar>
         </AppBar>
       </Box>

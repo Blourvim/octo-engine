@@ -13,13 +13,16 @@ import GrainIcon from '@material-ui/icons/Grain';
 import PersonIcon from '@material-ui/icons/Person';
 import Footer from './Footer';
 import { Link} from 'react-scroll'
+import Fab from '@material-ui/core/Fab';
+import NavigationIcon from '@material-ui/icons/Navigation';
+import zIndex from '@material-ui/core/styles/zIndex';
 
 
 
 
 const useStyles = makeStyles({
     list: {
-      width: 260,
+      width: 'fit',
       alignItems:'end',
       height:'100%',
       overflowX: 'hidden',
@@ -34,7 +37,9 @@ const useStyles = makeStyles({
 
     },
     button:{
-      color:'white',
+      color:'black',
+      position:'fixed',
+      zIndex:'100',
     },
     box:{
       alignItems:'end',
@@ -100,7 +105,10 @@ const useStyles = makeStyles({
       
         
           <React.Fragment key={'menu'}>
-            <Button className={clsx(classes.button)}onClick={toggleDrawer('left', true)}>{'Menu'}</Button>
+            <Fab color="primary" aria-label="navigate" className={clsx(classes.button)}onClick={toggleDrawer('left', true)}>
+            <NavigationIcon/>
+
+            </Fab>
             <Drawer ModalProps={{BackdropProps:{invisible:true}}} anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>
               {list('left')}
               <Footer place={'bottomNavContainer'}/>
