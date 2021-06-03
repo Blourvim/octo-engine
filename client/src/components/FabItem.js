@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-import NavigationIcon from '@material-ui/icons/Navigation';
+import Bookmarks from '@material-ui/icons/Bookmarks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,8 +21,8 @@ const FabItem=()=> {
 
   return (
     <div className={classes.root}>
-     {toggleDrawer && <Fab onClick={()=>{setToggleDrawer(!toggleDrawer)}}color="primary" aria-label="navigate">
-<NavigationIcon/>
+     {toggleDrawer && <Fab onClick={()=>{setToggleDrawer(!toggleDrawer)}}color="secondary" aria-label="Bookmarks">
+<Bookmarks/>
       </Fab>
      }
     </div>

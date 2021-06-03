@@ -24,7 +24,12 @@ marginLeft:'0',
 marginTop:'0',
 marginBottom:'0',
 backgroundColor:'hsl(256, 20%, 20%)',
+alignContent:'center'
 
+
+},
+skillGrid:{
+  width:'80%',
 
 },
 skillContainer:{
@@ -35,7 +40,6 @@ skillContainer:{
     paddingLeft:'0',
     paddingRight:'0',
     marginBottom:'20px',
-
     borderStyle:'solid',
     backgroundColor:'#967bb6',
 
@@ -44,13 +48,15 @@ backgroundContainer:{
   backgroundColor:'hsl(256, 20%, 20%)',
   margin:0,
   padding:0,
-  width:'cover'
+  width:'cover',
 },
 intro:{
   backgroundColor:'hsl(256, 20%, 60%)',
   textAlign:'center',
-  paddingTop:'2vw'
+  paddingTop:'2vw',
+  alignSelf:'center',
 },
+
 grid:{
   margin:'0px',
 }
@@ -64,17 +70,17 @@ const classes = useStyles();
 
 return(
 <div id={'About Me'}className={classes.container}>
-    <Grid className={classes.grid} container spacing={3}>
-      <Grid item xs={12}>
+    <Grid justify={'center'}className={classes.grid} container spacing={3}>
+      <Grid item xs={10}>
         <Paper className={classes.intro}elevation={24}>
-        <Typography variant={'h3'}>
+        <Typography variant={'h4'}>
           I am a self taught fullstack developer, who values detail, security, and making projects looking to challenge myself on coding, design and everything else
 
         </Typography>
 
         </Paper>
         </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid className={classes.skillGrid} item xs={12} md={6}>
     <Paper className={classes.skillContainer}>
         <Typography align={'center'}variant={'h4'}>Programming Skills</Typography>
    <SkillRating skill={'Javascript'} level={80}/>

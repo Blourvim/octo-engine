@@ -21,18 +21,12 @@ const useStyles = makeStyles((theme) => ({
     margin:0
   },
   appbar: {
-    background: "#222",
+    background: "#283747",
     margin: 0,
     height: "4rem",
 
   },
-  title: {
-    color: "tan",
-  },
-  
-  listItem: {
-    color: "tan",
-  },
+
   toolbar:{
     verticalAlign:'top',
     paddingRight:'0px',
@@ -56,7 +50,7 @@ const Navbar = () => {
 
   
   return (
-    <React.Fragment>
+    <div id='Home'>
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar className={classes.toolbar} >
@@ -66,7 +60,7 @@ const Navbar = () => {
                         <Link key={text +'navbarlink'} activeClass="active" to={text} hashSpy={true} spy={true} smooth={true}>
 
           <ListItem button key={text +'navbar'}>
-            <ListItemIcon key={text +'navbaricon'}>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
+            <ListItemIcon color={'secondary'}key={text +'navbaricon'}>{[<HomeIcon/>,<GrainIcon/>,<PersonIcon/>,<ContactMailIcon/>][index]}</ListItemIcon>
 
             <ListItemText key={text +'navbartext'} primary={text} />
             
@@ -81,7 +75,7 @@ const Navbar = () => {
       </Box>
       
 
-    </React.Fragment>
+    </div>
   );
 };
 

@@ -10,6 +10,12 @@ import Grid from '@material-ui/core/Grid';
 const useStyles =makeStyles({
     cardMedia:{
         height:'200px',
+    },
+    card:{
+        '&:hover': {
+            backgroundColor: "#4cc9f0",
+
+         },
     }
 
 

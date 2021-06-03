@@ -9,52 +9,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const useStyles = makeStyles({
-    homeMobile: {
-        fontSize: '12vw',
-        color: 'white',
-        WebkitTextStrokeColor: 'black',
-        WebkitTextStrokeWidth: '1px',
-        position: 'absolute',
-        transform: 'translate(-50%,-50%)',
-        right: '-10%',
-        top: '20%',
+ 
 
-
-    },
-    home: {
-        color:  'white',
-        fontSize: '6vw',
-        WebkitTextStrokeColor: 'black',
-        WebkitTextStrokeWidth: '1px',
-        position: 'absolute',
-        transform: 'translate(-50%,-50%)',
-        left: '50%',
-        top: '28%',
-
-
-    },
-    background: {
-        display:'flex',
-        backgroundImage: `url(${background})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'bottom',
-        height: '90vh',
-        alignItems: 'center',
-        background: 'no-repeat',
-        backgroundColor: '#C7A993'
-
-    },
-    backgroundMobile: {
-        backgroundImage: `url(${background})`,
-        backgroundSize: '1000px',
-        backgroundPosition: 'bottom',
-        height: '80vh',
-        alignItems: 'center',
-        background: 'no-repeat',
-        backgroundColor: '#C7A993',
-     
-
-    },
     box: {
         alignItems:'center',
         display: 'inline-block',
@@ -62,7 +18,7 @@ const useStyles = makeStyles({
         position: 'absolute',
         transform: 'translate(-50%,-50%)',
         left: '50%',
-        top: '50%'
+        top: '600%'
     },
     boxMobile: {
         display: 'inline-block',
@@ -80,7 +36,7 @@ const useStyles = makeStyles({
 
 })
 
-const Home = () => {
+const MyKey = () => {
 
 
     const classes = useStyles()
@@ -93,9 +49,8 @@ const Home = () => {
 
 
     return (
-        <div className={homeBackground}>
 
-            <Typography variant={'h1'} className={homeText}>Mert Yıldız</Typography>
+
 
             <div className={homeBox}>
 
@@ -105,8 +60,7 @@ const Home = () => {
                 <Footer place={'home'} />
 
             </div>
-        </div>
     )
 }
 
-export default Home;
+export default MyKey;

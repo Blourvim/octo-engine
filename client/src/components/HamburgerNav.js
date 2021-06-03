@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -14,8 +13,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import Footer from './Footer';
 import { Link} from 'react-scroll'
 import Fab from '@material-ui/core/Fab';
-import NavigationIcon from '@material-ui/icons/Navigation';
-import zIndex from '@material-ui/core/styles/zIndex';
+import Bookmarks from '@material-ui/icons/Bookmarks';
 
 
 
@@ -106,7 +104,7 @@ const useStyles = makeStyles({
         
           <React.Fragment key={'menu'}>
             <Fab color="primary" aria-label="navigate" className={clsx(classes.button)}onClick={toggleDrawer('left', true)}>
-            <NavigationIcon/>
+            <Bookmarks/>
 
             </Fab>
             <Drawer ModalProps={{BackdropProps:{invisible:true}}} anchor={'left'} open={state['left']} onClose={toggleDrawer('left', false)}>

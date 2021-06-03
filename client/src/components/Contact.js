@@ -1,17 +1,15 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import MyKey from './MyKey';
 
-import Send from "@material-ui/icons/Send";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
     background: 'hsl(256, 20%, 20%)',
-    height: "100vh",
+    height: "90vh",
     width:'99vw'
 
   },
@@ -24,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   form: {
     marginTop:'50px',
     position: "relative",
+    width:'90%'
   },
   input: {
     color: "#fff",
@@ -36,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
   field: {
     margin: "1rem 0rem",
   },
+  text:{
+    color:'tan'
+  }
 }));
 
 const InputField = withStyles({
@@ -64,45 +66,23 @@ const InputField = withStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
-    <div id='Contact'>
-<Box component="div" className={classes.contactContainer}>
+    <div className={classes.contactContainer} id='Contact'>
       <Grid container justify="center">
-        <Box component="form" className={classes.form}>
-          <Typography variant="h5" className={classes.heading}>
-            Hire or Contact me via...
-          </Typography>
-          <InputField
-            fullWidth={true}
-            label="Name"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-          />
-          <InputField
-            fullWidth={true}
-            label="Email"
-            variant="outlined"
-            inputProps={{ className: classes.input }}
-            className={classes.field}
-          />
-          <InputField
-            fullWidth={true}
-            label="Message"
-            variant="outlined"
-            multiline
-            rows={4}
-            inputProps={{ className: classes.input }}
-          />
-          <Button
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<Send />}
-            className={classes.button}
-          >
-            Contact Me
-          </Button>
-        </Box>
-      </Grid>
-    </Box>    </div>
+      <Grid item xs={12}>
+          <Typography className={classes.heading}variant={'h3'}>Contact Me </Typography>
+
+        </Grid>
+        <Grid className={classes.form} item xs={8} xm={6}>
+        <Typography className={classes.text} variant={'body'}>You are looking to hire me for your company, hire me for contract work, have an exciting idea that you want to discuss, would like to give feedback on my projects, or anything else you can think of!</Typography>
+
+          <Grid item xs={8} xm={6}>
+
+          <MyKey/>
+
+          </Grid>
+          </Grid>
+       </Grid>
+       </div>
   );
 };
 
