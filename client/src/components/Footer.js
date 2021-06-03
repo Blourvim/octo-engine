@@ -32,7 +32,7 @@ const Footer = (props) => {
   return (
     <BottomNavigation className={classes[props.place]}>
       <BottomNavigationAction rel="noreferrer noopener" target="_blank"href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}icon={<LinkedInIcon />} className={classes.root} />
-      <BottomNavigationAction icon={<AlternateEmail/>} className={classes.root} />
+      <BottomNavigationAction onClick={()=>{alert('Please mail me at blourvim@gmail.com')}} icon={<AlternateEmail/>} className={classes.root} />
       <BottomNavigationAction icon={<GitHubIcon />} rel="noreferrer noopener" target="_blank"href='https://github.com/Blourvim'className={classes.root} />
     </BottomNavigation>
   );

@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         position: 'absolute',
         transform: 'translate(-50%,-50%)',
         left: '50%',
-        top: '600%'
+        top: '30vh'
     },
     boxMobile: {
         display: 'inline-block',
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         position: 'absolute',
         transform: 'translate(-50%,-50%)',
         left: '40%',
-        top: '30%'
+        top: '30vh'
     },
     avatar: {
         width: '160px',
