@@ -10,6 +10,11 @@ import { Typography } from "@material-ui/core";
 const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#222",
+    position:'absolute',
+    bttom:'0',
+    top:'auto',
+    width:'100%',
+    height:'60px'
   },
   home: {
     background: "#222",
@@ -37,7 +42,7 @@ const Footer = (props) => {
   const classes = useStyles();
 
   return (
-    <BottomNavigation className={classes[props.place]}>
+    <BottomNavigation className={classes.bottomNavContainer}>
       <Typography className={classes.text}>Contact me at:</Typography>
       <BottomNavigationAction rel="noreferrer noopener" target="_blank"href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}icon={<LinkedInIcon />} className={classes.root} />
       <BottomNavigationAction onClick={()=>{alert('Please mail me at blourvim@gmail.com')}} icon={<AlternateEmail/>} className={classes.root} />
