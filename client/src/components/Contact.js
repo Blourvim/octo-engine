@@ -50,7 +50,7 @@ const Contact = () => {
 
         </Grid>
         <Grid className={classes.form} item xs={8} xm={6}>
-        <Typography className={classes.text} variant={'body'}>You are looking to hire me for your company, hire me for contract work, have an exciting idea that you want to discuss, would like to give feedback on my projects, or anything else you can think of!</Typography>
+        <Typography className={classes.text} variant={'body'}>If you are looking to hire me for your company, hire me for contract work, have an exciting idea that you want to discuss, would like to give feedback on my projects, or anything else you can think of!</Typography>
 
           <Grid item xs={8} xm={6}>
 

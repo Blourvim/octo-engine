@@ -41,17 +41,16 @@ const useStyles = makeStyles({
         height: '90vh',
         alignItems: 'center',
         background: 'no-repeat',
-        backgroundColor: '#C7A993'
+        backgroundColor: '#d5ddef'
 
     },
     backgroundMobile: {
-        backgroundImage: `url(${background})`,
         backgroundSize: '1000px',
         backgroundPosition: 'bottom',
         height: '80vh',
         alignItems: 'center',
         background: 'no-repeat',
-        backgroundColor: '#C7A993',
+        backgroundColor: '#d5ddef',
      
 
     },

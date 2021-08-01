@@ -12,23 +12,21 @@ const useStyles = makeStyles({
     marginBottom:'0.5rem'
 
   },
-  skillName:{
-    backgroundColor:'black',
-    color:'white',
-    display: 'flex',
-    padding: '12px',
-    verticalAlign: 'middle',
-    width:'30%',
-    fontSize:'85%',
-    alignItems:'center',
-    textAlign:'center',
-    justify:'center'
-  },
   skillLevel:{
     display: 'table-cell',
     padding: '10px',
     verticalAlign: 'middle',
   },
+  skillNameText:{
+    color:'white',
+    fontWeight:'bolder',
+    fontSize:'0.90rem'
+
+  },
+  skillNamePrecent:{
+fontSize:'1.5rem'
+
+  }
  
 })
 const SkillRating =(props)=>{
@@ -38,13 +36,11 @@ const SkillRating =(props)=>{
 
     return(
       <div className={classes.skillListItem}>
-      <div className={classes.skillName} key={skill}>
-        <Typography variant={'inherit'} className={classes.skillNameText}>{skill}</Typography>
-        </div>
       <div className={classes.skillLevel}
-      style={{ borderBottomRightRadius:'5px',borderTopRightRadius:'5px',width: `${level/2}%`, backgroundColor: `hsl(${281}, ${level}%, ${level/3}%)` }}
+      style={{ borderBottomRightRadius:'5px',borderTopRightRadius:'5px',width: `${level-5}%`, backgroundColor: `hsl(${281}, ${level}%, ${level/3}%)` }}
     >
-      <Typography variant={'body1'}>{level}%</Typography>
+        <Typography variant={'inherit'} className={classes.skillNameText}>{skill}</Typography>
+
     </div>
 </div>
 
