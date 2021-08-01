@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.967fb776.chunk.css",
-    "main.js": "/static/js/main.0845cd28.chunk.js",
-    "main.js.map": "/static/js/main.0845cd28.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7545a8a1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7545a8a1.js.map",
-    "static/js/2.d6fb21cc.chunk.js": "/static/js/2.d6fb21cc.chunk.js",
-    "static/js/2.d6fb21cc.chunk.js.map": "/static/js/2.d6fb21cc.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.967fb776.chunk.css.map": "/static/css/main.967fb776.chunk.css.map",
-    "static/js/2.d6fb21cc.chunk.js.LICENSE.txt": "/static/js/2.d6fb21cc.chunk.js.LICENSE.txt"
+    "main.css": "/octo-engine/static/css/main.967fb776.chunk.css",
+    "main.js": "/octo-engine/static/js/main.0845cd28.chunk.js",
+    "main.js.map": "/octo-engine/static/js/main.0845cd28.chunk.js.map",
+    "runtime-main.js": "/octo-engine/static/js/runtime-main.5a1c183f.js",
+    "runtime-main.js.map": "/octo-engine/static/js/runtime-main.5a1c183f.js.map",
+    "static/js/2.d6fb21cc.chunk.js": "/octo-engine/static/js/2.d6fb21cc.chunk.js",
+    "static/js/2.d6fb21cc.chunk.js.map": "/octo-engine/static/js/2.d6fb21cc.chunk.js.map",
+    "index.html": "/octo-engine/index.html",
+    "static/css/main.967fb776.chunk.css.map": "/octo-engine/static/css/main.967fb776.chunk.css.map",
+    "static/js/2.d6fb21cc.chunk.js.LICENSE.txt": "/octo-engine/static/js/2.d6fb21cc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7545a8a1.js",
+    "static/js/runtime-main.5a1c183f.js",
     "static/js/2.d6fb21cc.chunk.js",
     "static/css/main.967fb776.chunk.css",
     "static/js/main.0845cd28.chunk.js"
