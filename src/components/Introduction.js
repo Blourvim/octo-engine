@@ -7,7 +7,9 @@ const useStyles = makeStyles({
 
     container:{
 margin:0,
-height:'fit-content'
+height:'fit-content',
+position:'relative',
+minHeight:'100vh',
     },
     box: {
     
@@ -31,7 +33,6 @@ fontWeight:'bold',
     },
     portfilioContainer:{
         marginTop:'40px',
-        marginBottom:'50px',
         paddingBottom:'60px',
         minHeight:'100%'
     },
@@ -68,22 +69,22 @@ return(
 <Grid justify={'center'}className={classes.portfilioContainer}container spacing={0}>
 {[
     {
-     projectTitle:'Website incremental',
-     description:'My first project.It is an incremental game about a website that builds up as you click. Where I experimented with DOM manipulation',
+     projectTitle:'Simple Anime Search Bar Component',
+     description:'By using a public API it makes requests as the user types, and fetches the results, without causing the user to make requests with every key, keeping the network efficent without compromising  user experience ',
      link:'link',
      githubLink:'githasdasfasub'
     },
     {
-        projectTitle:'Doby Mick',
-        description:'Doby Mick features a text based adventure game engine in a legend of zork style gameplay, a simple boat simulator that I coded to practice writing algoritms ',
-        link:'liggnk',
-        githubLink:'gitasdashub'
+        projectTitle:'Bussines Website',
+        description:"A fast and responsive website that features a bussines in a simple way, and conveys the most information. Features a  Google Maps API as well as a Contact Us Form which recieves Emails",
+        link:'https://github.com/Blourvim/DobyMick',
+        githubLink:'https://blourvim.github.io/DobyMick/'
        },
        {
         projectTitle:'Paw Paw Mewdia',
         description:"My social network project that features a secure authentication and autherizationflow, connects to a database, and allows users to interract",
         link:'https://protected-dawn-87400.herokuapp.com/#/',
-        githubLink:'https://github.com/Blourvim/octo-engine'
+        githubLink:'https://github.com/Blourvim/legendary-carnival'
        }
     ].map(item=>(
         <PortfilioCard

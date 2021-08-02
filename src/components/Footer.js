@@ -11,7 +11,6 @@ const useStyles = makeStyles({
   bottomNavContainer: {
     background: "#222",
     position:'absolute',
-    bttom:'0',
     top:'auto',
     width:'100%',
     height:'60px'
