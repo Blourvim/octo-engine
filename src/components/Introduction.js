@@ -69,23 +69,21 @@ return(
 <Grid justify={'center'}className={classes.portfilioContainer}container spacing={0}>
 {[
     {
-     projectTitle:'Simple Anime Search Bar Component',
-     description:'By using a public API it makes requests as the user types, and fetches the results, without causing the user to make requests with every key, keeping the network efficent without compromising  user experience ',
-     link:'link',
-     githubLink:'githasdasfasub'
+     projectTitle:'Anime Search Bar',
+     description:'By using a public API it makes requests as the user types, and fetches the results, using debounce to prevent too many requests, keeping the network unburdened without compromising user experience ',
+     link:'https://blourvim.github.io/friendly-potato/',
+     githubLink:'https://github.com/Blourvim/friendly-potato'
     },
+
+
+
     {
-        projectTitle:'Bussines Website',
-        description:"A fast and responsive website that features a bussines in a simple way, and conveys the most information. Features a  Google Maps API as well as a Contact Us Form which recieves Emails",
-        link:'https://github.com/Blourvim/DobyMick',
-        githubLink:'https://blourvim.github.io/DobyMick/'
-       },
-       {
         projectTitle:'Paw Paw Mewdia',
-        description:"My social network project that features a secure authentication and autherizationflow, connects to a database, and allows users to interract",
+        description:"My social network project that features a secure authentication and autherizationflow, connects to a database, and allows users to interract. In this project I used, mongoDB as my database, node as the back-end and passport for authentication",
         link:'https://protected-dawn-87400.herokuapp.com/#/',
         githubLink:'https://github.com/Blourvim/legendary-carnival'
-       }
+       },
+
     ].map(item=>(
         <PortfilioCard
                         key={item.githubLink}
