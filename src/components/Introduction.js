@@ -80,7 +80,7 @@ return(
     {
         projectTitle:'Paw Paw Mewdia',
         description:"My social network project that features a secure authentication and autherizationflow, connects to a database, and allows users to interract. In this project I used, mongoDB as my database, node as the back-end and passport for authentication",
-        link:'https://protected-dawn-87400.herokuapp.com/#/',
+        link:'https://paw-paw-mewdia.herokuapp.com',
         githubLink:'https://github.com/Blourvim/legendary-carnival'
        },
 
