@@ -52,7 +52,7 @@ const PortfilioCard = (props)=>{
 const classes = useStyles()
 const {description,projectImage,link,githubLink,projectTitle} = props
     return(
-        <Grid className={classes.grid}item xs={9} sm={5}md={3} xl={1}>
+        <Grid className={classes.grid}item xs={9} sm={5}md={3} >
 <Card className={classes.card}>
 
     <CardContent >

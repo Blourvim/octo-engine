@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     position:'absolute',
     top:'auto',
     width:'100%',
-    height:'60px'
+    height:'67px'
   },
   home: {
     background: "#222",
@@ -31,8 +31,8 @@ const useStyles = makeStyles({
  },
  text:{
    color:'#D2B48C',
-   fontSize:'1.1rem',
-   marginTop:'15px',
+   fontSize:'1.2rem',
+   marginTop:'1.4rem',
    marginLeft:'10px'
  }
 });
@@ -42,7 +42,7 @@ const Footer = (props) => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <Typography className={classes.text}>Contact me at:</Typography>
+      <Typography className={classes.text}>Contact me:</Typography>
       <BottomNavigationAction rel="noreferrer noopener" target="_blank"href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}icon={<LinkedInIcon />} className={classes.root} />
       <BottomNavigationAction onClick={()=>{alert('Please mail me at blourvim@gmail.com')}} icon={<AlternateEmail/>} className={classes.root} />
       <BottomNavigationAction icon={<GitHubIcon />} rel="noreferrer noopener" target="_blank"href='https://github.com/Blourvim'className={classes.root} />
