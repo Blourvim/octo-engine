@@ -13,7 +13,8 @@ const useStyles = makeStyles({
     position:'absolute',
     top:'auto',
     width:'100%',
-    height:'80px'
+    height:'auto',
+
   },
   home: {
     background: "#222",
@@ -32,8 +33,8 @@ const useStyles = makeStyles({
  text:{
    color:'#D2B48C',
    fontSize:'1.2rem',
-   marginTop:'1.9rem',
-   marginLeft:'10px'
+   marginLeft:'10px',
+   marginTop:"1rem"
  }
 });
 
