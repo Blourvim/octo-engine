@@ -13,7 +13,7 @@ const useStyles =makeStyles({
         height:'200px',
     },
     card:{
-        backgroundColor:'#A7C4BC',
+        backgroundColor:'#ADB5BD',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -29,7 +29,7 @@ const useStyles =makeStyles({
         margin:'13px'
     },
     icon:{
-        color:'#2F5D62',
+        color:'#212529',
        
     },
     description:{
