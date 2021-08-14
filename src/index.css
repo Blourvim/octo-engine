@@ -1,18 +1,19 @@
 body{
 margin:0;
-background-color:#353b41;
+background: rgb(36,37,37);
+background: linear-gradient(0deg, rgba(36,37,37,1) 0%, rgb(3, 136, 96)100%); 
 
 }
 ::-webkit-scrollbar {
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #353c56; /*arka plan*/
+    background: #353c56;
   }
   ::-webkit-scrollbar-thumb {
-    background: #755cd3; /*gözüktüğü renk*/
+    background: #755cd3;
     border-radius: 50%;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #8d82f3;/*mouse gelince renk*/
+    background: #8d82f3;
   }

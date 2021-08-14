@@ -1,4 +1,4 @@
-import {Typography,Grid,Avatar } from '@material-ui/core'
+import {Typography,Grid,Divider } from '@material-ui/core'
 import React from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import PortfilioCard from './PortfilioCard';
@@ -25,9 +25,10 @@ fontWeight:'bold',
     text:{
         color:'#DFEEEA',
         paddingTop:'40px',
-        marginRight:'5vw',
-        marginLeft:'5vw',
-        fontSize:'1.2rem'
+        margin:'0 auto',
+        fontSize:'1.2rem',
+        maxWidth:'50rem',
+        padding:'2rem'
         
     },
     portfilioContainer:{
@@ -56,6 +57,7 @@ return(
 
 <Grid justify={'center'}className={classes.portfilioContainer}container spacing={0}>
 <ContactCard/>
+
 <Typography align='center'className={classes.text}>
         I am comfortable in both front-end and back-end technologies, such as; React, HTML, CSS, Material UI, MongoDb, REST and Graph QL api's
         as well as confident in javascript and it's common libraries 
@@ -63,6 +65,7 @@ return(
 
 </Typography>
 
+<Grid  justify={'center'}className={classes.portfilioContainer}container spacing={0}>
 {[
     {
      projectTitle:'Anime Search Bar',
@@ -81,6 +84,7 @@ return(
        },
 
     ].map(item=>(
+        
         <PortfilioCard
                         key={item.githubLink}
                        projectTitle={item.projectTitle}
@@ -93,6 +97,7 @@ return(
 
 
     ))}
+    </Grid>
     
 </Grid>
 
