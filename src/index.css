@@ -1,7 +1,6 @@
 body{
 margin:0;
-background: rgb(36,37,37);
-background: linear-gradient(0deg, rgba(36,37,37,1) 0%, rgb(3, 136, 96)100%); 
+background: #40916c; 
 
 }
 ::-webkit-scrollbar {

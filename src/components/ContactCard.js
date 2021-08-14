@@ -1,9 +1,10 @@
 import React from 'react';
-import {Divider,Avatar,Grid,Typography,IconButton,Link} from '@material-ui/core';
+import {Divider,Avatar,Grid,Typography,IconButton,Link,Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AlternateEmail from '@material-ui/icons/AlternateEmail'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import MailIcon from '@material-ui/icons/Mail';
 const useStyles = makeStyles({
     root:{
         padding:'25px',
@@ -33,6 +34,16 @@ const useStyles = makeStyles({
 },
 avatarContainer:{
     display:'grid'
+},
+contactMeButton:{
+margin:'0 auto',
+alignSelf:'center',
+backgroundColor:'#fefefe',
+borderRadius:'9px',
+fontWeight:'lighter',
+borderStyle:'solid',
+borderColor:'orange',
+borderWidth:'2px',
 }
 
 
@@ -42,7 +53,7 @@ const ContactCard = ()=>{
 const classes = useStyles()
  return(
      <Grid item xs='11' sm='10'>
-<Divider dark/>
+<Divider light/>
 
 
          <Grid className={classes.root} container>
@@ -63,15 +74,22 @@ const classes = useStyles()
              </div>
              </Grid>
 
-             <Grid item md='9' xs ='12'>
+             <Grid className={classes.avatarContainer}item md='9' xs ='12'>
 
              <Typography className={classes.text}variant='h6'>Hello, I am Mert Yıldız, a full-stack web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
+
+<Button 
+className={classes.contactMeButton}
+startIcon={<MailIcon/>}
+size='large'
+>Contact me
+</Button>
+             
              </Grid>
              
              </Grid>
          
          
-
 <Divider dark/>
      </Grid>
  ) 
