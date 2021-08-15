@@ -3,6 +3,7 @@ import Footer from './components/Footer.js';
 import Introduction from './components/Introduction.js';
 import MySkills from './components/MySkills.js';
 import {Divider} from '@material-ui/core'
+import PortfilioContainer from './components/PortfilioContainer.js';
 const App = () => {
 
 
@@ -11,6 +12,8 @@ const App = () => {
         <React.Fragment >
 
             <Introduction/>
+<PortfilioContainer/>
+
 <MySkills/>
             <Footer place={'bottomNavContainer'}/>
 
