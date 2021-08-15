@@ -10,7 +10,6 @@ const useStyles = makeStyles({
 margin:0,
 height:'fit-content',
 position:'relative',
-minHeight:'100vh',
     },
    
     header:{
@@ -64,43 +63,14 @@ return(
 
 
 </Typography>
-
-<Grid  justify={'center'}className={classes.portfilioContainer}container spacing={0}>
-{[
-    {
-     projectTitle:'Anime Search Bar',
-     description:'By using a public API it makes requests as the user types, and fetches the results, using debounce to prevent too many requests, keeping the network unburdened without compromising user experience ',
-     link:'https://blourvim.github.io/friendly-potato/',
-     githubLink:'https://github.com/Blourvim/friendly-potato'
-    },
+ <Grid item xs='12'>
+ <Divider dark/>
 
 
 
-    {
-        projectTitle:'Paw Paw Mewdia',
-        description:"My social network project that features a secure authentication and autherizationflow, connects to a database, and allows users to interract. In this project I used, mongoDB as my database, node as the back-end and passport for authentication",
-        link:'https://paw-paw-mewdia.herokuapp.com',
-        githubLink:'https://github.com/Blourvim/legendary-carnival'
-       },
-
-    ].map(item=>(
-        
-        <PortfilioCard
-                        key={item.githubLink}
-                       projectTitle={item.projectTitle}
-                       description={item.description}
-                       link={item.link}
-                       projectImage={item.projectImage}
-                       githubLink={item.githubLink}
-                       
-                       />
-
-
-    ))}
-    </Grid>
-    
+ </Grid>
 </Grid>
-
+    
 
     </div>
 

@@ -25,13 +25,22 @@ const useStyles = makeStyles({
     },
     text:{
         marginLeft:'1.2em',
-        marginTop:'30px',
         color:'#fefefe',
-        fontSize:'2.2rem',
+        fontSize:'2rem',
         lineHeight:'1.1'
-
-
 },
+    title:{
+     
+        marginLeft:'1.2em',
+        marginTop:'30px',
+        fontSize:'2.2rem',
+        lineHeight:'1.1',
+        color:'#fefefe',
+        fontWeight:'bolder'
+
+
+
+    },
 avatarContainer:{
     display:'grid'
 },
@@ -42,7 +51,6 @@ backgroundColor:'#fefefe',
 borderRadius:'9px',
 fontWeight:'lighter',
 borderStyle:'solid',
-borderColor:'orange',
 borderWidth:'2px',
 }
 
@@ -75,8 +83,9 @@ const classes = useStyles()
              </Grid>
 
              <Grid className={classes.avatarContainer}item md='9' xs ='12'>
+             <Typography className={classes.title}variant='h6'>Hello, I am Mert Yıldız,</Typography>
 
-             <Typography className={classes.text}variant='h6'>Hello, I am Mert Yıldız, a full-stack web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
+             <Typography className={classes.text}variant='h6'>A full-stack web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
 
 <Button 
 className={classes.contactMeButton}
