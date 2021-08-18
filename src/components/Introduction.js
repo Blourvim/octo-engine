@@ -13,7 +13,7 @@ position:'relative',
     },
    
     header:{
-color:'#D8B384',
+color:'#22223B',
 paddingTop:'40px',
 marginRight:'5vw',
 marginLeft:'5vw',
@@ -22,7 +22,7 @@ fontWeight:'bold',
 
     },
     text:{
-        color:'#DFEEEA',
+        color:'#F2E9E4',
         paddingTop:'40px',
         margin:'0 auto',
         fontSize:'1.2rem',

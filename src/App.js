@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from './components/Footer.js';
 import Introduction from './components/Introduction.js';
 import MySkills from './components/MySkills.js';
-import {Divider} from '@material-ui/core'
-import PortfilioContainer from './components/PortfilioContainer.js';
+import Portfilio from './components/portfilio/Portfilio.js';
+
 const App = () => {
 
 
@@ -12,9 +12,8 @@ const App = () => {
         <React.Fragment >
 
             <Introduction/>
-<PortfilioContainer/>
+<Portfilio/>
 
-<MySkills/>
             <Footer place={'bottomNavContainer'}/>
 
     </React.Fragment>
