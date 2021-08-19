@@ -1,7 +1,6 @@
 import {Typography,Grid,Divider } from '@material-ui/core'
 import React from 'react'
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import PortfilioCard from '../portfilio/PortfilioCard';
 import ContactCard from './ContactCard';
 
 const useStyles = makeStyles({
