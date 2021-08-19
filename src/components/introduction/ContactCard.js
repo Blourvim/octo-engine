@@ -31,19 +31,20 @@ const useStyles = makeStyles({
         }
     },
     text:{
-        marginLeft:'1.2em',
         color:'#F2E9E4',
         fontSize:'1.8rem',
-        lineHeight:'1.1'
+        lineHeight:'1.1',
+        letterSpacing:'-1.4px'
 },
     title:{
      
-        marginLeft:'1.2em',
         marginTop:'30px',
         fontSize:'2.2rem',
         lineHeight:'1.1',
         color:'#E76F51',
-        fontWeight:'bolder'
+        fontWeight:'bolder',
+        textAlign:'center',
+        paddingBottom:'0.4em'
 
 
 
@@ -82,7 +83,7 @@ const classes = useStyles()
 
          <Grid className={classes.root} container>
 
-             <Grid align='center'item md='3' xs ='12'>
+             <Grid align='center'item md='4' xs ='12'>
                  <Avatar variant='rounded'alt={'Avatar'} className={classes.avatar} src={'https://avatars.githubusercontent.com/u/71990861?v=4'}></Avatar>
                  <Flash>
 
@@ -106,10 +107,10 @@ const classes = useStyles()
 
              </Grid>
 
-             <Grid className={classes.avatarContainer}item md='9' xs ='12'>
-             <Typography className={classes.title}variant='h6'>Hello, I am Mert Yıldız,</Typography>
+             <Grid className={classes.avatarContainer}item md='7' xs ='12'>
+             <Typography align='center' className={classes.title}variant='h6'>Hello, I am Mert Yıldız,</Typography>
 
-             <Typography className={classes.text}variant='h6'>A full-stack web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
+             <Typography className={classes.text}variant='h6'>A web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
 
 
 <ContactMeButton/>
