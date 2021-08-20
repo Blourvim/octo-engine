@@ -12,6 +12,8 @@ const useStyles = makeStyles({
         backgroundColor:'#d6cfcb',
         borderRadius:'9px',
         fontWeight:'lighter',
+        borderStyle:'solid',
+        borderWidth:'2px',
         '&:hover':{
             backgroundColor:'#9A8C98'
         }
