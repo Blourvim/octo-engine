@@ -1,13 +1,11 @@
 import React from 'react';
-import {Divider,Avatar,Grid,Typography,IconButton,Link,Tooltip,Button} from '@material-ui/core';
+import {Divider,Avatar,Grid,Typography,IconButton,Link,Tooltip} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import AlternateEmail from '@material-ui/icons/AlternateEmail';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import ContactMeButton from './ContactMeButton';
 import Flash from 'react-reveal/Flash';
-import Zoom from '@material-ui/core/Zoom';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
 const useStyles = makeStyles({
     root:{
@@ -19,32 +17,39 @@ const useStyles = makeStyles({
         height:'200px',
         width:'200px',
         alignSelf:'center',
-        marginBottom:'8px'
+        marginBottom:'8px',
+        borderStyle:'solid',
+        borderWidth:'2px',
     },
     button:{
         marginTop:'4px',
         color:'black',
-        backgroundColor:'#d6cfcb',
+        backgroundColor:'#289cbc',
         margin:'5px',
+        borderStyle:'solid',
+        borderWidth:'2px',
+
         '&:hover':{
-            backgroundColor:'#C9ADA7'
+            backgroundColor:'#a9d8ce'
         }
     },
     text:{
-        color:'#F2E9E4',
         fontSize:'1.8rem',
         lineHeight:'1.1',
-        letterSpacing:'-1.4px'
+        letterSpacing:'-1.4px',
+        color:'#fefefe'
 },
     title:{
+        color:'#fdd68b',
      
         marginTop:'30px',
         fontSize:'2.2rem',
         lineHeight:'1.1',
-        color:'#E76F51',
         fontWeight:'bolder',
         textAlign:'center',
-        paddingBottom:'0.4em'
+        paddingBottom:'0.4em',
+        textStroke:'1px',
+        WebkitTextStrokeColor:'black'
 
 
 
@@ -62,11 +67,7 @@ avatarContainer:{
 
 const ContactCard = ()=>{
       const [open, setOpen] = React.useState(false);
-      const [copy,setCopy] = React.useState(false);
-      const handleTooltipClose = () => {
-        setOpen(false);
-      };
-    
+     
       const handleTooltipOpen = () => {
         setOpen(true);
       };
@@ -78,7 +79,7 @@ const ContactCard = ()=>{
 const classes = useStyles()
  return(
      <Grid item xs='11' sm='10'>
-<Divider light/>
+<Divider dark/>
 
 
          <Grid className={classes.root} container>

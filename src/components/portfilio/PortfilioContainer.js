@@ -1,15 +1,13 @@
 import React  from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import WebIcon from '@material-ui/icons/Web';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import {Container,Divider,IconButton,Link} from '@material-ui/core';
+import {Container,Divider} from '@material-ui/core';
 
 
 const useStyles = makeStyles({
 container:{
     width:'90%',
-    maxWidth:'900px',
+    maxWidth:'800px',
     margin:'0 auto',
     display:'grid',
     paddingTop:'40px',
@@ -19,7 +17,7 @@ container:{
 text:{
     paddingTop:'20px',
     color:'#f2e9e4',
-    fontSize:'1.2rem',
+    fontSize:'1.4rem',
     maxWidth:'50ch',
     margin:'0 auto',
 
@@ -29,7 +27,7 @@ link:{
     paddingTop:'20px',
     paddingBottom:'20px',
     textDecoration:'none',
-    color:'black',
+    color:'#aba195',
     fontSize:'1.2rem'
 },
 title:{
@@ -45,12 +43,6 @@ image:{
 
 
 },
-icon:{
-    width:'2em',
-    height:'2em',
-    color:'#22223B',
-},
-
 
 })
 

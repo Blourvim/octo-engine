@@ -11,11 +11,10 @@ const App = () => {
         <React.Fragment >
 
             <Introduction/>
-<Portfilio/>
-
+            <Portfilio/>
             <Footer place={'bottomNavContainer'}/>
 
-    </React.Fragment>
+       </React.Fragment>
     )
 }
 
