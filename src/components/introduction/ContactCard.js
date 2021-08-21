@@ -114,7 +114,6 @@ const classes = useStyles()
              <Typography className={classes.text}variant='h6'>A web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
 
 
-<ContactMeButton/>
              </Grid>
              
              </Grid>
