@@ -55,7 +55,7 @@ return(<div id='Portfilio'className={classes.backgroundContainer}>
         description:"My social network  that features a secure authentication and autherization flow, connects to a database, and allows users to interract",
         link:'https://paw-paw-mewdia.herokuapp.com',
         image:'https://picsum.photos/200/300',
-        githubLink:'https://github.com/Blourvim/octo-engine',
+        githubLink:'https://github.com/Blourvim/legendary-carnival',
      icons:[<ReactIcon/>,<JavascriptIcon/>,<MaterialUIIcon/>,<NodeJSIcon/>,<MongoDBIcon/>     ],
 
        }
