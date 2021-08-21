@@ -27,12 +27,12 @@ link:{
     paddingTop:'20px',
     paddingBottom:'20px',
     textDecoration:'none',
-    color:'#aba195',
+    color:'#98c1d9',
     fontSize:'1.2rem'
 },
 title:{
     paddingBottom:'0.9em',
-    color:'#f4a261'
+    color:'#ced4da'
 
 },
 image:{

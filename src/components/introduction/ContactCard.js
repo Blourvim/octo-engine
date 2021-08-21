@@ -24,23 +24,23 @@ const useStyles = makeStyles({
     button:{
         marginTop:'4px',
         color:'black',
-        backgroundColor:'#289cbc',
+        backgroundColor:'#dee2e6',
         margin:'5px',
         borderStyle:'solid',
         borderWidth:'2px',
 
         '&:hover':{
-            backgroundColor:'#a9d8ce'
+            backgroundColor:'#ced4da'
         }
     },
     text:{
         fontSize:'1.8rem',
         lineHeight:'1.1',
         letterSpacing:'-1.4px',
-        color:'#fefefe'
+        color:'#ced4da'
 },
     title:{
-        color:'#fdd68b',
+        color:'#ced4da',
      
         marginTop:'30px',
         fontSize:'2.2rem',
@@ -48,8 +48,6 @@ const useStyles = makeStyles({
         fontWeight:'bolder',
         textAlign:'center',
         paddingBottom:'0.4em',
-        textStroke:'1px',
-        WebkitTextStrokeColor:'black'
 
 
 
