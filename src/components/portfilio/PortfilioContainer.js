@@ -58,7 +58,7 @@ return(
 <Container className={classes.container}>
 <Typography align='center'variant='h4' className={classes.title}>{title}</Typography>
 
-<img className={classes.image}src='https://picsum.photos/600/260'alt='picsum'/> 
+<img className={classes.image}src={image}alt='picsum'/> 
 <Typography className={classes.text} variant='p'>Website Link: <a href={link}className={classes.link} >{link}</a></Typography>
 <Divider dark/>
 <Typography className={classes.text} variant='p'>Source Code: <a href={githubLink}className={classes.link} >{githubLink}</a></Typography>

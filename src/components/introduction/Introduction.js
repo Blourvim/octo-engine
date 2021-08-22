@@ -48,8 +48,8 @@ return(
 <ContactCard/>
 
 <Typography align='center'className={classes.text}>
-        I am comfortable in both front-end and back-end technologies, such as; React, HTML, CSS, Material UI, MongoDb, REST and Graph QL api's
-        as well as confident in javascript and it's common libraries 
+        I am proficent in both front-end and back-end technologies, such as; React, HTML, CSS, MongoDb, REST and Graph QL API's
+        as well as confident in javascript and it's libraries. 
 
 
 </Typography>

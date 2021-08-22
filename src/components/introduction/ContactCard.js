@@ -87,7 +87,7 @@ const classes = useStyles()
                  <Flash>
 
              <div>
-                 <Link rel="noreferrer noopener" target="_blank" href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}>
+                 <Link rel="noreferrer noopener" target="_blank" href={'https://www.linkedin.com/in/mert-y-2457a020b/'}>
                      <IconButton className={classes.button} ><LinkedInIcon /></IconButton>
                  </Link>
 
