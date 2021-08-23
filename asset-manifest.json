@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/octo-engine/static/css/main.dbe74b4e.chunk.css",
-    "main.js": "/octo-engine/static/js/main.a851dbd9.chunk.js",
-    "main.js.map": "/octo-engine/static/js/main.a851dbd9.chunk.js.map",
+    "main.js": "/octo-engine/static/js/main.c16ad643.chunk.js",
+    "main.js.map": "/octo-engine/static/js/main.c16ad643.chunk.js.map",
     "runtime-main.js": "/octo-engine/static/js/runtime-main.5a1c183f.js",
     "runtime-main.js.map": "/octo-engine/static/js/runtime-main.5a1c183f.js.map",
     "static/js/2.cc456e4a.chunk.js": "/octo-engine/static/js/2.cc456e4a.chunk.js",
@@ -11,13 +11,15 @@
     "static/css/main.dbe74b4e.chunk.css.map": "/octo-engine/static/css/main.dbe74b4e.chunk.css.map",
     "static/js/2.cc456e4a.chunk.js.LICENSE.txt": "/octo-engine/static/js/2.cc456e4a.chunk.js.LICENSE.txt",
     "static/media/find-anime-screenshot.649ffad7.png": "/octo-engine/static/media/find-anime-screenshot.649ffad7.png",
+    "static/media/find-anime.f9226c81.gif": "/octo-engine/static/media/find-anime.f9226c81.gif",
     "static/media/my-portfilio-screenshot.39ca7b32.png": "/octo-engine/static/media/my-portfilio-screenshot.39ca7b32.png",
-    "static/media/paw-paw-screenshot.32969116.png": "/octo-engine/static/media/paw-paw-screenshot.32969116.png"
+    "static/media/paw-paw-screenshot.32969116.png": "/octo-engine/static/media/paw-paw-screenshot.32969116.png",
+    "static/media/paw-paw.69f32e71.gif": "/octo-engine/static/media/paw-paw.69f32e71.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.5a1c183f.js",
     "static/js/2.cc456e4a.chunk.js",
     "static/css/main.dbe74b4e.chunk.css",
-    "static/js/main.a851dbd9.chunk.js"
+    "static/js/main.c16ad643.chunk.js"
   ]
 }
