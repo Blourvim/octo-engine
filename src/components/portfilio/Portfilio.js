@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade';
 import findAnimeImage from './pictures/find-anime-screenshot.png';
 import pawPawImage from './pictures/paw-paw-screenshot.png';
 import myPortflioImage from './pictures/my-portfilio-screenshot.png';
+import findAnimeGif from './gifs/find-anime.gif';
+import pawPawGif from './gifs/paw-paw.gif';
 const useStyles = makeStyles({
 
 backgroundContainer:{
@@ -33,14 +35,14 @@ return(<div id='Portfilio'className={classes.backgroundContainer}>
         title:'Anime Search Bar',
         description:'A website that I plan to keep working on in the future. It is a simple anime search that utilizes a public API to make calls while displaying the results the code has a rough back-end in the developement branch, that I have scrapped for now.',
         link:'https://blourvim.github.io/friendly-potato/',
-        image:findAnimeImage,
+        image:findAnimeGif,
         githubLink:'https://github.com/Blourvim/friendly-potato',
        },
        {
         title:'Paw Paw Mewdia',
         description:"My social network  that features a secure authentication and autherization flow, connects to a database, and allows users to interract",
         link:'https://paw-paw-mewdia.herokuapp.com',
-        image:pawPawImage,
+        image:pawPawGif,
         githubLink:'https://github.com/Blourvim/legendary-carnival',
     
        },
