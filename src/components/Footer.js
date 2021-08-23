@@ -40,13 +40,13 @@ const Footer = (props) => {
   }
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction rel="noreferrer noopener" target="_blank"href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}icon={<LinkedInIcon />} className={classes.root} />
+      <BottomNavigationAction aria-label='Button to copy e-mail'rel="noreferrer noopener" target="_blank"href={'https://www.linkedin.com/in/mert-y%C4%B1ld%C4%B1z-2457a020b'}icon={<LinkedInIcon />} className={classes.root} />
       <Tooltip disableFocusListener disableTouchListener title={open? "Copied":"Copy To Clipboard"}>
 
       <BottomNavigationAction onClick={()=>{handleClick()}} icon={<AlternateEmail/>} className={classes.root} />
       </Tooltip>
      
-     <BottomNavigationAction icon={<GitHubIcon />} rel="noreferrer noopener" target="_blank"href='https://github.com/Blourvim'className={classes.root} />
+     <BottomNavigationAction aria-label='Button for GitHub'icon={<GitHubIcon />} rel="noreferrer noopener" target="_blank"href='https://github.com/Blourvim'className={classes.root} />
     </BottomNavigation>
   );
 };

@@ -49,7 +49,7 @@ image:{
 
 const PortfilioContainer =(props)=>{
 
-    const {image, gif, title, description, githubLink, link } = props;
+    const {image, title, description, githubLink, link } = props;
 const classes = useStyles();
 
 return(
@@ -59,18 +59,18 @@ return(
 <Typography align='center'variant='h4' className={classes.title}>{title}</Typography>
 
 <img className={classes.image}src={image}alt='picsum'/> 
-<Typography className={classes.text} variant='p'>Website Link: <a href={link}className={classes.link} >{link}</a></Typography>
-<Divider dark/>
-<Typography className={classes.text} variant='p'>Source Code: <a href={githubLink}className={classes.link} >{githubLink}</a></Typography>
-<Divider dark/>
+<Typography className={classes.text} variant='body1'>Website Link: <a href={link}className={classes.link} >{link}</a></Typography>
+<Divider />
+<Typography className={classes.text} variant='body1'>Source Code: <a href={githubLink}className={classes.link} >{githubLink}</a></Typography>
+<Divider />
 
-<Typography className={classes.text} variant='p'>  {description} 
+<Typography className={classes.text} variant='body1'>  {description} 
 </Typography>
 
 
 </Container>
 
-<Divider dark/>
+<Divider />
 </>
 
 

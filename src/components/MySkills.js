@@ -28,14 +28,14 @@ const MySkills =()=>{
 const classes= useStyles()
 return(
     <Grid container className={classes.container}>
-        <Grid item xs='12'>
+        <Grid item xs={12}>
         <Typography className={classes.title}align='center' variant='h3'>Some Technologies That I Use</Typography>
 
 </Grid>
     {iconArray.map((icon,index)=>{
         return(
 
-<Grid item key={icon.name} xs='12' sm='6' md='3' xl='2' className={classes.icon}align='center'>
+<Grid item key={icon.name} xs={12} sm={6} md={3} xl={2} className={classes.icon}align='center'>
 {icon.svg}
 </Grid>
 
@@ -45,11 +45,11 @@ return(
 
     })}
 
-<Grid item xs='12' >
-<Divider dark/>
+<Grid item xs={12} >
+<Divider />
 
 </Grid>
-<Divider dark/>
+<Divider />
 
 </Grid>
 

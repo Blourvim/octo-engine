@@ -44,7 +44,7 @@ return(
        
   
 
-<Grid justify={'center'}className={classes.portfilioContainer}container spacing={0}>
+<Grid justifyContent={'center'}className={classes.portfilioContainer}container spacing={0}>
 <ContactCard/>
 
 <Typography align='center'className={classes.text}>
@@ -53,8 +53,8 @@ return(
 
 
 </Typography>
- <Grid item xs='12'>
- <Divider dark/>
+ <Grid item xs={12}>
+ <Divider />
 
 
 

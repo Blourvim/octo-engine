@@ -3,8 +3,6 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import PortfilioContainer from './PortfilioContainer';
 import Divider from '@material-ui/core/Divider';
 import Fade from 'react-reveal/Fade';
-import findAnimeImage from './pictures/find-anime-screenshot.png';
-import pawPawImage from './pictures/paw-paw-screenshot.png';
 import myPortflioImage from './pictures/my-portfilio-screenshot.png';
 import findAnimeGif from './gifs/find-anime.gif';
 import pawPawGif from './gifs/paw-paw.gif';
@@ -54,7 +52,7 @@ return(<div id='Portfilio'className={classes.backgroundContainer}>
      githubLink:'https://github.com/Blourvim/octo-engine',
     },
     ].map((item,index)=>(
-        <Fade>
+        <Fade key={item.title}>
         <PortfilioContainer
                         key={item.githubLink}
                        title={item.title}
