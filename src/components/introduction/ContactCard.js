@@ -108,7 +108,9 @@ const classes = useStyles()
              <Grid className={classes.avatarContainer}item md={7} xs ={12}>
              <Typography align='center' className={classes.title}variant='h6'>Hello, I am Mert Yıldız,</Typography>
 
-             <Typography className={classes.text}variant='h6'>A web developer, who is passionate about learning the technologies that makes internet so great.</Typography>
+             <Typography className={classes.text}variant='h6'>
+                 A full-stack web developer, who is passionate about the technologies that makes internet so great.
+             </Typography>
 
 
              </Grid>
