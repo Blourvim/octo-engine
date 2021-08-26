@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/octo-engine/static/css/main.dbe74b4e.chunk.css",
+    "main.css": "/octo-engine/static/css/main.e2eddb01.chunk.css",
     "main.js": "/octo-engine/static/js/main.6c0ba3cf.chunk.js",
     "main.js.map": "/octo-engine/static/js/main.6c0ba3cf.chunk.js.map",
     "runtime-main.js": "/octo-engine/static/js/runtime-main.5a1c183f.js",
@@ -8,7 +8,7 @@
     "static/js/2.e2edbde5.chunk.js": "/octo-engine/static/js/2.e2edbde5.chunk.js",
     "static/js/2.e2edbde5.chunk.js.map": "/octo-engine/static/js/2.e2edbde5.chunk.js.map",
     "index.html": "/octo-engine/index.html",
-    "static/css/main.dbe74b4e.chunk.css.map": "/octo-engine/static/css/main.dbe74b4e.chunk.css.map",
+    "static/css/main.e2eddb01.chunk.css.map": "/octo-engine/static/css/main.e2eddb01.chunk.css.map",
     "static/js/2.e2edbde5.chunk.js.LICENSE.txt": "/octo-engine/static/js/2.e2edbde5.chunk.js.LICENSE.txt",
     "static/media/find-anime.f9226c81.gif": "/octo-engine/static/media/find-anime.f9226c81.gif",
     "static/media/my-portfilio-screenshot.c75ab3c7.png": "/octo-engine/static/media/my-portfilio-screenshot.c75ab3c7.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.5a1c183f.js",
     "static/js/2.e2edbde5.chunk.js",
-    "static/css/main.dbe74b4e.chunk.css",
+    "static/css/main.e2eddb01.chunk.css",
     "static/js/main.6c0ba3cf.chunk.js"
   ]
 }
